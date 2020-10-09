@@ -1,0 +1,41 @@
+1. 로컬에서
+
+- 로컬저장소 생성, 특정 디렉토리에서 Git Bash Here 메뉴선택후 Git Bash창이 열린후에
+git init
+
+- 사용자정보등록
+git config --global user.email "lee43392010@gmail.com"
+git config --global user.name "lee43392010"
+
+- 파일추가
+git add 파일명
+
+- 커밋정보등록
+git commit -m "커밋에대한 설명"
+
+- 커밋 히스토리 조회
+git log
+
+- 특정 커밋버전으로 로컬소스 되돌리기
+git checkout 커밋ID
+
+- 최신 커밋버전으로 로컬소스 되돌리기
+git checkout -
+
+
+2. 원격으로
+
+- 로컬저장소와 원격저장소 주소연결
+git remote add origin https://github.com/아이디/프로젝트명.git
+
+- 로컬저장소에 있는 마지막 커밋버전을 원격저장소에 커밋
+git push origin master
+
+
+3. 원격에서 로컬로
+
+- 원격프로젝트자체를 로컬저장소에 내려받기
+git clone https://github.com/아이디/프로젝트명.git . => 한칸 띄우고 마침표(현재디렉토리에 받기)
+
+- 원격저장소의 마지막 커밋을 로컬저장소에 내려받기
+git pull origin master
